@@ -10,8 +10,18 @@
 🔡 Pesquisa das palavras geradas em uma API de dicionário online.
 🔡 Exibição das palavras válidas.
 
+# Como Executar
+Para executar o projeto "Assoletra", siga estas etapas:
+
+1. Certifique-se de ter o Node.js instalado em sua máquina. Você pode baixá-lo em [nodejs.org](https://nodejs.org/).
+2. Clone este repositório para o seu ambiente local.
+3. No terminal, navegue até o diretório raiz do projeto.
+4. Execute o comando `npm install` para instalar as dependências.
+5. Depois que a instalação estiver concluída, execute o comando `npm run dev` para iniciar o servidor de desenvolvimento.
+6. Abra o navegador e acesse `http://localhost:{porta-que-esta-rodando}` para visualizar o aplicativo.
+
 # Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para reportar bugs ou sugerir novas funcionalidades. Se desejar contribuir com código, por favor, abra um pull request.
 
-# Info
+## Informações Adicionais
 ℹ️ O projeto "Assoletra" é uma ferramenta independente e não está afiliado ao jogo "Soletra" ([Link para o jogo](https://g1.globo.com/jogos/soletra/)) do portal G1 da Globo. O objetivo deste projeto é apenas fornecer uma maneira conveniente para os usuários encontrarem palavras válidas para o referido jogo.

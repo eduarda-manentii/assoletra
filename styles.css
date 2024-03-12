@@ -1,0 +1,94 @@
+body {
+  background-color: #0d47a1;
+  font-family: Arial, sans-serif;
+  color: black;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+input[type="text"], input[type="number"] {
+  padding: 9px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1565c0;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0d47a1;
+}
+
+#loading {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+#definition {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#definition p {
+  margin-bottom: 10px;
+}
+
+#definition ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#definition li {
+  margin-bottom: 5px;
+}
+
+#resultCard {
+  display: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#resultCard h2 {
+  margin-top: 0;
+}
+
+#resultList {
+  text-align: left;
+}
+
+#resultList p {
+  margin-bottom: 10px;
+}
+
+#resultList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#resultList li {
+  margin-bottom: 5px;
+}
