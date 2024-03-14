@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assoletra</title>
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div id="root">
-    <h1>Assoletra</h1>
-    <label for="requiredLetter">Letra fixa</label>
-    <input type="text" id="requiredLetter" maxlength="1" placeholder="Digite a letra fixa">
-    <br>
-    <label for="allowedLetters">6 Letras variáveis</label>
-    <div class="letter-container">
-      <input type="text" id="allowedLetters" maxlength="6" placeholder="Digite 6 letras variáveis">
-    </div>
-    <label for="maxWordLength">Máximo de letras na palavra:</label>
-    <input type="number" id="maxWordLength" min="4" max="14" value="4">
-    <br>
-    <button id="searchButton">Soletrar</button>
-    <div id="loading" style="display: none;">Pesquisando...</div>
-    <div id="definition"></div>
-    <div id="resultCard" style="display: none;">
-      <h2>Respostas</h2>
-      <div id="resultList"></div>
-    </div>
-    <div id="secondResultCard" style="display: none;">
-      <h2>Outras Respostas</h2>
-      <div id="secondResultList"></div>
-    </div>
-  </div>
 
+<body>
+  <section>
+    <div id="root">
+      <img class="img" src="images/intro.png" alt="Logo Assoletra">
+      <label for="requiredLetter">Letra fixa</label>
+      <input type="text" id="requiredLetter" maxlength="1" placeholder="Digite a letra fixa">
+      <label for="allowedLetters">6 Letras variáveis</label>
+      <input type="text" id="allowedLetters" maxlength="6" placeholder="Digite 6 letras variáveis">
+      <label for="maxWordLength">Máximo de letras na palavra:</label>
+      <input type="number" id="maxWordLength" min="4" max="14" value="4">
+      <button id="searchButton">Soletrar</button>
+      <div id="loading" style="display: none;"></div>
+      <div id="definition"></div>
+    </div>
+  </section>
   <script src="script.js"></script>
 </body>
+
 </html>
