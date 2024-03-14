@@ -21,6 +21,24 @@ if (savedDictionaryData) {
   loadDictionaryData();
 }
 
+function isSingular(word)  {
+  const invariaveis = ['lápis', 'tênis', 'ônibus'];
+  if (invariaveis.includes(word)) {
+    return true;
+  }
+  const sufixosPlurais = [
+    'ais', 'eis', 'éis', 'iis', 'ois', 'uis', 'ães',
+    'ãos', 'ões', 'ães', 'ãos', 'ões', 'ais', 'eis',
+    'ois', 'ois', 'uis', 'as', 'es', 'os', 'sse'
+  ];
+  for (const sufixo of sufixosPlurais) {
+    if (word.endsWith(sufixo)) {
+      return false;
+    }
+  }
+  return true;
+};
+
 document.getElementById('searchButton').addEventListener('click', async () => {
   const requiredLetter = document.getElementById('requiredLetter').value.toLowerCase();
   const allowedLetters = document.getElementById('allowedLetters').value.toLowerCase();
@@ -53,7 +71,7 @@ document.getElementById('searchButton').addEventListener('click', async () => {
   const wordsArray = dictionaryData.split('\n');
   wordsArray.forEach(word => {
     const len = word.length;
-    if (len >= 4 && len <= maxWordLength && word.includes(requiredLetter)) {
+    if (len >= 4 && len <= maxWordLength && word.includes(requiredLetter) && isSingular(word)) {
       const isAllowed = [...word].every(char => allowedLetters.includes(char) || char === requiredLetter);
       console.log('Palavra:', word, 'Permitida:', isAllowed);
       if (isAllowed) {
